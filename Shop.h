@@ -4,7 +4,7 @@
 #include"Employee.h"
 #include "Manager.h"
 #include "Casual.h"
-class shop
+class Shop
 {
     public:
         Shop();
