@@ -39,7 +39,7 @@ float Casual:: pay()
     float result;
     for (int i =0;i<Casual::dayCount;i++)
     {
-        result  =Employee::result+Casual::hoursWorked[i];
+        result  =result+Casual::hoursWorked[i];
     }
     result  =payRate*result;
     dayCount =0;
