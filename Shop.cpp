@@ -39,7 +39,6 @@ Shop*Shop::createShop(int authority)
 {
     if (authority>=10)
     {
-        Employee*employees[5];
         Shop*p;
         return p;
     }else{
