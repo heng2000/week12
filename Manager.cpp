@@ -3,7 +3,7 @@
 #include "Manager.h"
 using namespace std;
 
-Manager::Manager(int payrate): Employee(payrate)
+Manager::Manager(int a): Employee(a)
 {
 }
 
