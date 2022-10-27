@@ -15,6 +15,6 @@ class Employee
         void set_payRate(int number1);
         void set_energyLevel(float number2);
         int get_payRate();
-        float set_energyLevel();
+        float get_energyLevel();
 };
 #endif
