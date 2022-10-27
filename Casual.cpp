@@ -22,24 +22,24 @@ int Casual:: get_dayCount()
 }
 void Casual:: work(int mins)
 {
-    energyLevel =energyLevel-0.5*mins;
-    if (energyLevel<0||mins>=200)
+    Employee::energyLevel =Employee::energyLevel-0.5*mins;
+    if (Employee::energyLevel<0||mins>=200)
     {
-        energyLevel =0;
-        Casual::hoursWorked[dayCount] =200/60;
+        Employee::energyLevel =0;
+        Casual::hoursWorked[dayCount] =200;
         Casual::endWorkDay();
         return ;
     }
-    hoursWorked[dayCount] =mins;
+    Casual::hoursWorked[dayCount] =mins;
     Casual::endWorkDay();
 }
 
 float Casual:: pay()
 {
     float result;
-    for (int i =0;i<dayCount;i++)
+    for (int i =0;i<Casual::dayCount;i++)
     {
-        result  =result+Casual::hoursWorked[i];
+        result  =Employee::result+Casual::hoursWorked[i];
     }
     result  =payRate*result;
     dayCount =0;
