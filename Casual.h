@@ -5,7 +5,7 @@
 class Casual :public Employee
 {
     public:
-        Casual(int payrate);
+        Casual(int a);
         void set_dayCount(int number);
         int get_dayCount();
         void endWorkDay();
