@@ -25,7 +25,7 @@ int Employee:: get_payRate()
     return payRate;
 }
 
-float Employee:: set_energyLevel()
+float Employee:: get_energyLevel()
 {
     return energyLevel;
 }
