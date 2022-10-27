@@ -11,7 +11,7 @@ class Casual :public Employee
         void endWorkDay();
         void work(int mins);
         float pay();
-    private:
+    protected:
         float hoursWorked[7];
         int dayCount;
 };

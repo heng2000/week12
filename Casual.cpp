@@ -30,7 +30,7 @@ void Casual:: work(int mins)
         Casual::endWorkDay();
         return ;
     }
-    hoursWorked[dayCount] =mins/60;
+    hoursWorked[dayCount] =mins;
     Casual::endWorkDay();
 }
 
