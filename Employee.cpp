@@ -4,12 +4,13 @@ using namespace std;
 
 Employee::Employee(int payRate)
 {
-    energyLevel =1;
+    energyLevel =100%;
+    payRate =payRate;
 }
 
 void Employee:: takeABreak(int mins)
 {
-    energyLevel =energyLevel+0.02*mins;
+    energyLevel =energyLevel+mins*(20%);
 }
 
 void Employee:: set_payRate(int number1)
