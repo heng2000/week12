@@ -10,8 +10,8 @@ class Employee
     public:
         Employee(int payRate);    // creates a Employee with payRate
         void takeABreak(int mins);
-        virtual void work(int mins);
-        virtual float pay();
+        virtual void work(int mins)=0;
+        virtual float pay()=0;
         void set_payRate(int number1);
         void set_energyLevel(float number2);
         int get_payRate();
