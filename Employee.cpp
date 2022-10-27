@@ -2,10 +2,10 @@
 #include <string>
 using namespace std;
 
-Employee::Employee(int payRate)
+Employee::Employee(int a)
 {
     energyLevel =1.00;
-    payRate =payRate;
+    payRate =a;
 }
 
 void Employee:: takeABreak(int mins)
