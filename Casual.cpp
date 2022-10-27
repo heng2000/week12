@@ -22,7 +22,7 @@ int Casual:: get_dayCount()
 }
 void Casual:: work(int mins)
 {
-    energyLevel =energyLevel-0.05*mins;
+    energyLevel =energyLevel-0.5*mins;
     if (energyLevel<0||mins>=200)
     {
         energyLevel =0;
@@ -31,6 +31,7 @@ void Casual:: work(int mins)
         return ;
     }
     hoursWorked[dayCount] =mins/60;
+    Casual::endWorkDay();
 }
 
 float Casual:: pay()
@@ -52,4 +53,5 @@ float Casual:: pay()
 void Casual:: endWorkDay()
 {
     dayCount++;
+    energyLevel =100;
 }
