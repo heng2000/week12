@@ -11,7 +11,7 @@ class Shop
         void addEmployee(Employee *employee);
         int get_count();
         Employee**get_employee();
-        static Shop*createshop(int authority);
+        static Shop*createShop(int authority);
     private:
         int count;
         Employee**employees;

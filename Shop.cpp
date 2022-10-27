@@ -35,12 +35,12 @@ Employee** Shop::get_employee()
 {
     return employees;
 }
-Shop*Shop::createshop(int authority)
+Shop*Shop::createShop(int authority)
 {
     if (authority>=10)
     {
         Employee*employees[5];
-        shop*p;
+        Shop*p;
         return p;
     }else{
         return nullptr;
